@@ -40,7 +40,7 @@ namespace gyak4
                 xlApp = new Excel.Application();
                 xlWB = xlApp.Workbooks.Add(Missing.Value);
                 xlSheet = xlWB.ActiveSheet;
-                //CreateTable(); 
+                CreateTable(); 
 
                 xlApp.Visible = true;
                 xlApp.UserControl = true;
@@ -96,6 +96,10 @@ namespace gyak4
                 values[counter, 8] = "";
                 counter++;
 
+                xlSheet.get_Range(
+     GetCell(2, 1),
+     GetCell(1 + values.GetLength(0), values.GetLength(1))).Value2 = values;
+
             }
 
         }
@@ -116,7 +120,9 @@ namespace gyak4
             ExcelCoordinate += x.ToString();
 
             return ExcelCoordinate;
-        }
 
+
+        }
+        
     }
 }
