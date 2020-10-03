@@ -25,6 +25,7 @@ namespace gyak4
             InitializeComponent();
 
             LoadData();
+            CreateExcel();
         }
 
         private void LoadData()
