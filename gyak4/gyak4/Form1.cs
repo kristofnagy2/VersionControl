@@ -88,12 +88,12 @@ namespace gyak4
                 values[counter, 0] = f.Code;
                 values[counter, 1] = f.Vendor;
                 values[counter, 2] = f.Side;
-                values[counter, 3] = f.District;
+                values[counter, 3] = f.Elevator;
                 values[counter, 4] = f.Elevator;
                 values[counter, 5] = f.NumberOfRooms;
                 values[counter, 6] = f.FloorArea;
                 values[counter, 7] = f.Price;
-                values[counter, 8] = "";
+                values[counter, 8] = "= x*y";
                 counter++;
 
                 xlSheet.get_Range(
@@ -123,6 +123,11 @@ namespace gyak4
 
 
         }
-        
+     
+
+        private object GetCell(int v, object length)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
