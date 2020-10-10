@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VAR.Entities;
+using System.IO;
 
 namespace VAR
 {
@@ -71,6 +72,10 @@ namespace VAR
             }
 
             return value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
         }
     }
 }
