@@ -8,7 +8,7 @@ namespace Mikroszimulacio.Entities
 {
     public class Person
     {
-        public int BirhtYear { get; set; }
+        public int BirthYear { get; set; }
         public Gender Gender { get; set; }
         public int NbrOfChildren { get; set; }
         public bool IsAlive { get; set; }

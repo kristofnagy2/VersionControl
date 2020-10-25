@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mikroszimulacio.Entities
 {
-    class DeathProbability
+    public class DeathProbability
     {
 
         public int Gender { get; set; }
